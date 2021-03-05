@@ -2,7 +2,7 @@
  * 0050014733
  */
 
-// package First; -> Estava dando erro no VsCode, pois este código foi feito no Eclipse
+// package First; -> Estava dando erro no VsCode, pois este código foi feito no Eclipse.
 
 public class Tabuada {
 
