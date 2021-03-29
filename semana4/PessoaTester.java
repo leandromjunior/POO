@@ -1,3 +1,5 @@
+package semana4;
+
 public class PessoaTester {
     
     public static void main(String[] args) {

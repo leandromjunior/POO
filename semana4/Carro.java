@@ -1,5 +1,6 @@
+package semana4;
+
 public class Carro {
-    
     private int num_acentos;
     private String cor;
     
@@ -16,8 +17,5 @@ public class Carro {
     public void setCor(String cor) {
         this.cor = cor;
     }
-
-    
-
 
 }

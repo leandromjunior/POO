@@ -12,7 +12,7 @@ public class LerString{
 
         nome = input.next();
 
-        System.out.printf("\nBoa noite, %s\n", nome);
+        System.out.printf("\nBoa noite, %s \n", nome);
         System.out.println("Tchau " + nome);
         System.out.print("FIM!!");
     }

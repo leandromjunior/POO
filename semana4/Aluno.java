@@ -1,4 +1,6 @@
-public class Aluno extends Pessoa {
+package semana4;
+
+public class Aluno extends Pessoa{
 
     private String matricula;
     private String curso;

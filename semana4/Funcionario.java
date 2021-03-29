@@ -1,3 +1,5 @@
+package semana4;
+
 public class Funcionario extends Pessoa {
     
     private String setor;
@@ -19,7 +21,7 @@ public class Funcionario extends Pessoa {
     public boolean isTrabalhando() {
         return trabalhando;
     }
-    public void setTrabalhando(Boolean trabalhando) {
+    public void setTrabalhando(boolean trabalhando) {
         this.trabalhando = trabalhando;
     }
 

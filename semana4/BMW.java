@@ -1,5 +1,6 @@
-public class BMW extends Carro {
+package semana4;
 
+public class BMW extends Carro{
     private float velocidade;
 
 
@@ -18,5 +19,4 @@ public class BMW extends Carro {
         System.out.println("Numero de lugares: " + this.getNum_acentos());
         System.out.println("Velocidade: " + this.velocidade);
     }
-    
 }

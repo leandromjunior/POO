@@ -1,4 +1,7 @@
+package semana4;
+
 public class Pessoa{
+    
     private String nome;
     private int idade;
     private String sexo;
@@ -40,5 +43,8 @@ public class Pessoa{
         System.out.println(" Boa noite " + this.nome + ", Feliz Aniversário! ");
     }
 
+    public void comprarLanche(){
+        System.out.println("Comprou lanche!!!");
+    }
     
 }
