@@ -1,4 +1,9 @@
-public class Acao{
+package semana5;
+
+import java.util.ArrayList;
+
+//Implements - Implementa um interface
+public class Acao implements II_Ibovespa{
 
     private String nome;
     private float preco;
@@ -27,6 +32,23 @@ public class Acao{
     @Override
     public String toString() {
         return "Acao [nome=" + nome + ", preco=" + preco + ", valorizacao=" + valorizacao + "]";
+    }
+
+    //Métodos referentes a Interface
+    @Override
+    public void listar(ArrayList<Acao> acoes) {
+        
+        System.out.println("Lista de evolução PETROBRAS");
+        //foreach para imprimir os objetos do Array acoes
+        for (Acao minhaAcao : acoes) {
+            System.out.println(minhaAcao);   
+        }
+        
+    }
+    @Override
+    public void ordenar(ArrayList<Acao> acoes) {
+        // Ordenar por preço crescente
+        
     }
 
     
