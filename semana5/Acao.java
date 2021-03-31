@@ -47,9 +47,8 @@ public class Acao implements II_Ibovespa{
     }
     @Override
     public void ordenar(ArrayList<Acao> acoes) {
-        // Ordenar por preço crescente
-        
-    }
 
+        System.out.println("Lista Ordenada PETROBRAS");  
+    }
     
 }

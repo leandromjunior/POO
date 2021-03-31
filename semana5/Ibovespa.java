@@ -42,10 +42,9 @@ public class Ibovespa {
         ArrayList<Acao> acoes = new ArrayList<Acao>();
         acoes.add(petr4_1);
         acoes.add(petr4_2);
-
+        
         petr4_1.listar(acoes);
-        petr4_2.ordenar(acoes); // Ordenar por preço crescente
-
+        petr4_2.ordenar(acoes);
 
         teclado.close();
 
