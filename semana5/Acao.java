@@ -1,14 +1,15 @@
 package semana5;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 //Implements - Implementa um interface
-public class Acao implements II_Ibovespa{
+//Interface Comparable necessária para implementar a ordenação do array
+public class Acao implements II_Ibovespa, Comparable<Acao>{
 
     private String nome;
     private float preco;
     private float valorizacao;
-
 
     public String getNome() {
         return nome;
@@ -49,6 +50,19 @@ public class Acao implements II_Ibovespa{
     public void ordenar(ArrayList<Acao> acoes) {
 
         System.out.println("Lista Ordenada PETROBRAS");  
+
+        Collections.sort(acoes); //Ordenação
+
+        for (Acao minhaAcao : acoes) {
+            System.out.println(minhaAcao);   
+        }
     }
-    
+
+    // Auxilia o funcionamento do Collections.sort()
+    @Override
+    public int compareTo(Acao precoAcao) {
+        
+        return (int) (this.preco - precoAcao.getPreco()); // Ordena crescentemente de acordo com o preço
+    }
+ 
 }
