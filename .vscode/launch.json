@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch LerString",
+            "request": "launch",
+            "mainClass": "LerString",
+            "projectName": "POO_c0be6d68"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tabuada",
+            "request": "launch",
+            "mainClass": "Tabuada",
+            "projectName": "POO_c0be6d68"
+        },
+        {
+            "type": "java",
+            "name": "Launch TabuadaSoma",
+            "request": "launch",
+            "mainClass": "TabuadaSoma",
+            "projectName": "POO_c0be6d68"
+        },
+        {
+            "type": "java",
+            "name": "Launch TesterAluno",
+            "request": "launch",
+            "mainClass": "TesterAluno",
+            "projectName": "POO_c0be6d68"
+        },
+        {
+            "type": "java",
+            "name": "Launch PessoaTester",
+            "request": "launch",
+            "mainClass": "semana4.PessoaTester",
+            "projectName": "POO_c0be6d68"
+        },
+        {
+            "type": "java",
+            "name": "Launch TesterCarro",
+            "request": "launch",
+            "mainClass": "semana4.TesterCarro",
+            "projectName": "POO_c0be6d68"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ibovespa",
+            "request": "launch",
+            "mainClass": "semana5.Ibovespa",
+            "projectName": "POO_c0be6d68"
+        },
+        {
+            "type": "java",
+            "name": "Launch Programa",
+            "request": "launch",
+            "mainClass": "semana6.principal.Programa",
+            "projectName": "POO_c0be6d68"
+        }
+    ]
+}
