@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Programa",
+            "request": "launch",
+            "mainClass": "semana6ex.principal.Programa",
+            "projectName": "POO_c0be6d68"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
