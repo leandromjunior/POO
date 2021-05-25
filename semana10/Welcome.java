@@ -15,16 +15,18 @@ public class Welcome{
         tela = new JFrame();
         painel = new JPanel();
 
-        painel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
+        painel.setBorder(BorderFactory.createEmptyBorder(40, 40, 30, 30));
         painel.setLayout(new GridLayout(0,1));
         
         boas = new JLabel("Bem Vindo");
+        boas.setFont((new Font("Verdana", Font.BOLD, 20)));
+        boas.setForeground(Color.GREEN);
         painel.add(boas);
 
         tela.add(painel, BorderLayout.CENTER);
         tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        tela.setTitle("Tela de Login");
-        tela.setSize(400,400);
+        tela.setTitle("Entrada");
+        tela.setSize(500,500);
         tela.pack();
         tela.setVisible(true);
 
