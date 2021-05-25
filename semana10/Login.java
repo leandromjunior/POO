@@ -11,6 +11,7 @@ public class Login implements ActionListener {
 
     private JLabel lblTituloLog;
     private JLabel lblTituloPass;
+    private JLabel lblStatus;
 
     private JTextField txtLog;
 
@@ -18,12 +19,14 @@ public class Login implements ActionListener {
 
     private JButton btnEntrar;
 
+    private String senhaCorreta = "123";
+
     public Login(){
         
         tela = new JFrame();
         painel = new JPanel();
 
-        painel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
+        painel.setBorder(BorderFactory.createEmptyBorder(35, 35, 20, 30));
         painel.setLayout(new GridLayout(0,1));
         
         lblTituloLog = new JLabel("Login:");
@@ -38,6 +41,9 @@ public class Login implements ActionListener {
         txtPass = new JPasswordField();
         painel.add(txtPass);
 
+        lblStatus = new JLabel();
+        painel.add(lblStatus); 
+
         btnEntrar = new JButton("Entrar");
         btnEntrar.addActionListener(this);
         painel.add(btnEntrar);
@@ -45,7 +51,7 @@ public class Login implements ActionListener {
         tela.add(painel, BorderLayout.CENTER);
         tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         tela.setTitle("Tela de Login");
-        tela.setSize(400,400);
+        tela.setSize(400,450);
         tela.pack();
         tela.setVisible(true);
 
@@ -57,6 +63,15 @@ public class Login implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e){
-        
+        if(txtPass.getText().equals(senhaCorreta)){
+            lblStatus.setText("Senha Correta");
+            lblStatus.setFont(new Font("Verdana", Font.BOLD, 18));
+            lblStatus.setForeground(Color.BLUE);
+            new Welcome();
+        }else{
+            lblStatus.setText("Senha Incorreta. Tente 123");
+            lblStatus.setFont(new Font("Verdana", Font.BOLD, 18));
+            lblStatus.setForeground(Color.RED);
+        }
     }
 }
